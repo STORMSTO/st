@@ -290,3 +290,35 @@ section{
         font-size: 10px;       
     }
 }
+@media only screen and (max-width: 767px) {
+  /* أكواد CSS للتكيف مع أجهزة الهواتف الصغيرة هنا */
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* أكواد CSS لتحسين تصميمات الهواتف المتوسطة هنا */
+}
+
+@media only screen and (min-width: 1024px) {
+  /* أكواد CSS لتحسين تصميمات الأجهزة الكبيرة هنا */
+}
+/* للشاشات العمودية */
+@media only screen and (orientation: portrait) {
+  /* أكواد CSS للتصميم عندما تكون الشاشة عمودية */
+}
+
+/* للشاشات الأفقية */
+@media only screen and (orientation: landscape) {
+  /* أكواد CSS للتصميم عندما تكون الشاشة أفقية */
+}
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px; /* تغيير حجم الخط لأجهزة الهواتف الصغيرة */
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sidebar {
+    display: none; /* إخفاء الشريط الجانبي على الهواتف الصغيرة */
+  }
+  .content {
+    width: 100%; /* جعل محتوى الصفحة يمتلئ بالكامل في الهواتف الصغيرة */
+  }
+}

@@ -290,3 +290,78 @@ section{
         font-size: 10px;       
     }
 }
+/* تحسين الخطوط الكبيرة */
+h1 {
+  font-size: 2rem; /* حجم أقل للعناوين الكبيرة */
+}
+
+h2, h3 {
+  font-size: 1.5rem; /* تحسين الخط للعناوين الثانوية */
+}
+
+p {
+  font-size: 1rem; /* نصوص الفقرات تكون أصغر */
+}
+
+/* استخدام Flexbox لتنظيم العناصر */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* تحسين عرض الأزرار */
+button, .btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+}
+
+/* تحسين الـ Media Queries لجعل الموقع متجاوبًا */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem; /* حجم أصغر للعناوين على الشاشات الصغيرة */
+  }
+  
+  h2, h3 {
+    font-size: 1.2rem; /* تقليل حجم الخط للعناوين الثانوية */
+  }
+  
+  p {
+    font-size: 0.9rem; /* نص الفقرة أصغر على الموبايل */
+  }
+  
+  .container {
+    padding: 10px; /* تقليل الهوامش */
+  }
+  
+  button, .btn {
+    font-size: 0.9rem; /* تصغير الأزرار */
+    padding: 8px 16px;
+  }
+  
+  /* تعديل عرض الصور إن وجدت */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* تحسين المسافات بين العناصر */
+.section {
+  margin-bottom: 30px;
+}
+
+/* إعدادات إضافية للتأكد من التناسق */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

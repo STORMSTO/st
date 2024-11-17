@@ -269,24 +269,33 @@ section{
 
     }
 }
-
-@media (max-width:641px){
-    body{
-        font-size: 12px;
-        
-    }
-
-    .main-content h2{
-        font-size: 0.8em;  
-    }
-    .main-content h3 {
-        font-size: 1.4em;  
-    }
-
+/* تصميم افتراضي */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-@media (max-width:300px){
-    body{
-        font-size: 10px;       
+/* شاشات بعرض أقل من 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+/* شاشات بعرض أقل من 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    .container {
+        padding: 5px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
